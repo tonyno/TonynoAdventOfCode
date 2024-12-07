@@ -1,4 +1,3 @@
-
 def check_sequence(items: list[int]):
     diffs = [l - r for (l, r) in zip(items[:-1], items[1:])]
     top, bottom = max(diffs), min(diffs)
@@ -6,3 +5,6 @@ def check_sequence(items: list[int]):
 
 with open('day2.txt', 'r') as f:
     print("Count: ", sum(check_sequence(list(map(int, item.split()))) for item in f))
+
+
+
